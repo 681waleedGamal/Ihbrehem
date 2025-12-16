@@ -1,24 +1,39 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>تأجير كراسي وطاولات | كنب فاخر | خيام | جلسات شعبية | مؤسسة فارس للحفلات</title>
-  <meta name="description" content="لمسات للحفلات تقدم خدمات تأجير كراسي، طاولات، كنب فاخر، خيام، جلسات شعبية، قهوجيين وصبابين، وتجهيز صوت وإضاءة في الدمام، الخبر، جودة عالية، أسعار منافسة، تركيب سريع.">
+  <!-- إضافة اسم الموقع بالعربي للبحث -->
+  <title>فارس للحفلات | تأجير كراسي وطاولات | كنب فاخر | خيام | جلسات شعبية | مؤسسة فارس للحفلات</title>
+  <meta name="description" content="فارس للحفلات تقدم خدمات تأجير كراسي، طاولات، كنب فاخر، خيام، جلسات شعبية، قهوجيين وصبابين، وتجهيز صوت وإضاءة في الدمام، الخبر، جودة عالية، أسعار منافسة، تركيب سريع.">
 
-  <meta name="keywords" content="تأجير كراسي, تأجير طاولات, تأجير كنب, تأجير خيام, جلسات شعبية, قهوجي الدمام, تأجير سماعات, حفلات الدمام, تنسيق مناسبات, كراسي ملكي, خيام أوروبية">
+  <!-- كلمات مفتاحية بالعربي للتحسين -->
+  <meta name="keywords" content="فارس للحفلات, تأجير كراسي, تأجير طاولات, تأجير كنب, تأجير خيام, جلسات شعبية, قهوجي الدمام, تأجير سماعات, حفلات الدمام, تنسيق مناسبات, كراسي ملكي, خيام أوروبية">
   <link rel="canonical" href="https://altamaiz7.com" />
   
   <!-- FontAwesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
+  <!-- إضافة شعار الموقع في نتائج البحث -->
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:title" content="فارس للحفلات - تجهيز كامل للمناسبات">
+  <meta property="og:description" content="خدمات تأجير متكاملة للحفلات في الدمام والخبر">
+  <meta property="og:url" content="https://altamaiz7.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="فارس للحفلات">
+  <meta name="twitter:description" content="تأجير مستلزمات الحفلات والمناسبات">
+  <meta name="twitter:image" content="logo.png">
 
   <!-- Structured Data for Local Business -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "مؤسسة فارس للحفلات",
-    "image": "https://i.postimg.cc/76Fb6Fkg/6c9678ae-bf6a-4a31-a72d-31fc390bac9f.jpg",
+    "name": "فارس للحفلات",
+    "alternateName": "مؤسسة فارس للحفلات",
+    "image": "logo.png",
     "description": "تأجير مستلزمات الحفلات والمناسبات في الدمام، الخبر.",
     "address": {
       "@type": "PostalAddress",
@@ -48,6 +63,96 @@
       line-height: 1.6;
     }
 
+    /* شعار الهيدر مع حركات */
+    .header-logo-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+      animation: floatLogo 6s ease-in-out infinite;
+    }
+
+    .header-logo {
+      width: 120px;
+      height: 120px;
+      background: url('https://i.postimg.cc/76Fb6Fkg/6c9678ae-bf6a-4a31-a72d-31fc390bac9f.jpg') center/contain no-repeat;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      transition: all 0.5s ease;
+      opacity: 0.95;
+    }
+
+    .header-logo:hover {
+      transform: scale(1.1) rotate(5deg);
+      opacity: 1;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      border-color: rgba(255, 255, 255, 0.6);
+    }
+
+    @keyframes floatLogo {
+      0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-10px) rotate(2deg);
+      }
+    }
+
+    /* شعار الموقع في الهيدر مع خلفية شفافة */
+    .site-brand {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 10px 20px;
+      border-radius: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .site-logo {
+      width: 60px;
+      height: 60px;
+      background: url('https://i.postimg.cc/76Fb6Fkg/6c9678ae-bf6a-4a31-a72d-31fc390bac9f.jpg') center/cover no-repeat;
+      border-radius: 50%;
+      border: 2px solid white;
+      animation: pulseLogo 3s infinite;
+    }
+
+    .site-name {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      font-family: 'Arial', sans-serif;
+    }
+
+    @keyframes pulseLogo {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     /* Header */
     header {
       background: linear-gradient(135deg, #3a1c71, #6a11cb);
@@ -68,6 +173,16 @@
       background: url('https://i.postimg.cc/76Fb6Fkg/6c9678ae-bf6a-4a31-a72d-31fc390bac9f.jpg') center/cover no-repeat;
       opacity: 0.15;
       z-index: 0;
+      animation: backgroundZoom 20s infinite alternate;
+    }
+
+    @keyframes backgroundZoom {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.05);
+      }
     }
 
     header > * {
@@ -79,12 +194,36 @@
       font-size: 42px;
       margin-bottom: 25px;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      animation: slideInDown 1s ease-out;
     }
 
     header p {
       font-size: 22px;
       margin-bottom: 40px;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      animation: slideInUp 1s ease-out 0.3s both;
+    }
+
+    @keyframes slideInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* Navigation */
@@ -94,6 +233,12 @@
       border-radius: 12px;
       display: inline-block;
       margin-top: 20px;
+      animation: fadeIn 1s ease-out 0.5s both;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     nav a {
@@ -102,11 +247,27 @@
       text-decoration: none;
       font-size: 18px;
       font-weight: 500;
-      transition: color 0.3s ease;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background: #ffd700;
+      transition: width 0.3s ease;
     }
 
     nav a:hover {
       color: #ffd700;
+    }
+
+    nav a:hover::after {
+      width: 100%;
     }
 
     /* Buttons */
@@ -116,6 +277,7 @@
       gap: 20px;
       flex-wrap: wrap;
       margin-top: 40px;
+      animation: fadeIn 1s ease-out 0.7s both;
     }
 
     .buttons a {
@@ -131,15 +293,27 @@
       text-decoration: none;
       transition: all 0.3s ease;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      animation: pulseButton 2s infinite;
+    }
+
+    @keyframes pulseButton {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
     }
 
     .buttons a.call {
       background-color: #007BFF;
+      animation-delay: 0.5s;
     }
 
     .buttons a:hover {
-      transform: scale(1.1);
+      transform: scale(1.1) rotate(5deg);
       box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+      animation: none;
     }
 
     /* Main Content Sections */
@@ -147,6 +321,7 @@
       padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
+      animation: fadeIn 1s ease-out;
     }
 
     .section h2 {
@@ -157,6 +332,24 @@
       border-bottom: 3px solid #6a11cb;
       padding-bottom: 10px;
       display: inline-block;
+      position: relative;
+    }
+
+    .section h2::before {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      right: 0;
+      width: 0;
+      height: 3px;
+      background: #ffd700;
+      animation: expandLine 2s ease-out forwards;
+    }
+
+    @keyframes expandLine {
+      to {
+        width: 100%;
+      }
     }
 
     /* Service Cards */
@@ -166,8 +359,26 @@
       margin-bottom: 35px;
       border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: all 0.3s ease;
       overflow: hidden;
+      position: relative;
+    }
+
+    .service::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, #3a1c71, #6a11cb);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s ease;
+    }
+
+    .service:hover::before {
+      transform: scaleX(1);
     }
 
     .service:hover {
@@ -285,7 +496,7 @@
     section.contact-us ul li a:hover {
       background: #6a11cb;
       color: white;
-      transform: rotate(10deg);
+      transform: rotate(10deg) scale(1.1);
     }
 
     /* Footer */
@@ -330,6 +541,24 @@
       box-shadow: 0 6px 18px rgba(0,0,0,0.3);
       text-decoration: none;
       transition: all 0.3s ease;
+      animation: bounceIn 1s ease-out;
+    }
+
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.3);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      70% {
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
     .fixed-contact a.whatsapp {
@@ -338,35 +567,119 @@
 
     .fixed-contact a.call {
       background: linear-gradient(135deg, #007BFF, #0056b3);
+      animation-delay: 0.3s;
     }
 
     .fixed-contact a:hover {
-      transform: scale(1.15);
+      transform: scale(1.15) rotate(5deg);
       box-shadow: 0 10px 24px rgba(0,0,0,0.4);
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
-      header h1 { font-size: 32px; }
-      header p { font-size: 18px; }
-      nav a { font-size: 16px; margin: 0 8px; }
-      .section h2 { font-size: 28px; }
-      .service h3 { font-size: 22px; }
-      .fixed-contact {
-        bottom: 20px;
-        left: 20px;
+      .site-brand {
+        position: relative;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        justify-content: center;
+        padding: 8px 15px;
       }
+      
+      .site-name {
+        font-size: 20px;
+      }
+      
+      .header-logo-container {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .header-logo {
+        width: 100px;
+        height: 100px;
+      }
+      
+      header h1 { 
+        font-size: 28px; 
+        margin-top: 20px;
+      }
+      
+      header p { 
+        font-size: 18px; 
+      }
+      
+      nav { 
+        padding: 10px; 
+      }
+      
+      nav a { 
+        font-size: 14px; 
+        margin: 0 5px; 
+        display: inline-block;
+        padding: 5px;
+      }
+      
+      .section h2 { 
+        font-size: 24px; 
+      }
+      
+      .service h3 { 
+        font-size: 20px; 
+      }
+      
+      .fixed-contact {
+        bottom: 15px;
+        left: 15px;
+      }
+      
       .fixed-contact a {
-        width: 55px;
-        height: 55px;
-        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .site-name {
+        font-size: 18px;
+      }
+      
+      .site-logo {
+        width: 50px;
+        height: 50px;
+      }
+      
+      header {
+        padding: 80px 15px 100px;
+      }
+      
+      nav a {
+        font-size: 12px;
+        margin: 0 3px;
       }
     }
   </style>
 </head>
 <body>
+  <!-- شعار الموقع في الهيدر -->
+  <div class="site-brand">
+    <div class="site-logo"></div>
+    <div class="site-name">فارس للحفلات</div>
+  </div>
+
+  <!-- شعار دائري مع حركات -->
+  <div class="header-logo-container">
+    <div class="header-logo" title="شعار مؤسسة فارس للحفلات"></div>
+  </div>
+
   <!-- Navigation Bar -->
-  <nav style="background-color: #fff; padding: 15px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <nav style="background-color: #fff; padding: 15px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000;">
     <a href="#about" style="margin: 0 20px; font-weight: bold; text-decoration: none; color: #3a1c71;">من نحن</a>
     <a href="#services" style="margin: 0 20px; font-weight: bold; text-decoration: none; color: #3a1c71;">خدماتنا</a>
     <a href="#contact" style="margin: 0 20px; font-weight: bold; text-decoration: none; color: #3a1c71;">تواصل معنا</a>
@@ -375,7 +688,7 @@
 
   <!-- Hero Header -->
   <header>
-    <h1>مؤسسة فارس للحفلات | تجهيز كامل للمناسبات في الدمام، الخبر</h1>
+    <h1>فارس للحفلات | تجهيز كامل للمناسبات في الدمام، الخبر</h1>
     <p>نقدم حلولاً متكاملة لتأجير مستلزمات الحفلات بدءًا من الكراسي والطاولات وقهوجيين وصبابين وصولاً إلى الخيام الفاخرة والضيافة.</p>
     
     <nav>
@@ -401,15 +714,14 @@
   <!-- Main Introduction -->
   <main>
     <section aria-label="مقدمة عن خدماتنا" style="background: rgba(255,255,255,0.95); margin: 30px auto; padding: 30px; border-radius: 12px; max-width: 1100px; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
-      <h2 style="color: #3a1c71; text-align: center;">مؤسسة فارس للحفلات: شريكك المثالي في تنظيم المناسبات</h2>
+      <h2 style="color: #3a1c71; text-align: center;">فارس للحفلات: شريكك المثالي في تنظيم المناسبات</h2>
       <p style="line-height: 1.9; color: #444; font-size: 18px;">
-        في <strong>مؤسسة فارس للحفلات</strong>، نؤمن بأن التفاصيل الصغيرة تصنع الفارق الكبير. لذلك نقدم خدمات تأجير شاملة تشمل <strong>تأجير كراسي وطاولات</strong> بجودة عالية، <strong>قهوجيين وصبابين</strong> قهوجي الدمام، <strong>تأجير كنب فاخر</strong> يناسب الأذواق الراقية، <strong>تأجير خيام أوروبية</strong> بتصاميم مبتكرة، <strong>تأجير جلسات شعبية ومغربية</strong> تراعي التراث والأناقة، بالإضافة إلى <strong>تأجير مكيفات</strong> و<strong>تأجير أنظمة صوت وإضاءة</strong> احترافية. نحن نغطي مدن الرياض، جدة، الدمام، الخبر، الظهران، القطيف، والجبيل، مع ضمان توصيل سريع وتركيب دقيق يليق بمناسبتك.
+        في <strong>فارس للحفلات</strong>، نؤمن بأن التفاصيل الصغيرة تصنع الفارق الكبير. لذلك نقدم خدمات تأجير شاملة تشمل <strong>تأجير كراسي وطاولات</strong> بجودة عالية، <strong>قهوجيين وصبابين</strong> قهوجي الدمام، <strong>تأجير كنب فاخر</strong> يناسب الأذواق الراقية، <strong>تأجير خيام أوروبية</strong> بتصاميم مبتكرة، <strong>تأجير جلسات شعبية ومغربية</strong> تراعي التراث والأناقة، بالإضافة إلى <strong>تأجير مكيفات</strong> و<strong>تأجير أنظمة صوت وإضاءة</strong> احترافية. نحن نغطي مدن الرياض، جدة، الدمام، الخبر، الظهران، القطيف، والجبيل، مع ضمان توصيل سريع وتركيب دقيق يليق بمناسبتك.
       </p>
       <p style="line-height: 1.9; color: #444; font-size: 18px;">
         سواء كنت تستعد لحفل زفاف، حفلة تخرج، مؤتمر عمل، أو مناسبة عائلية، فريقنا المحترف جاهز لتحويل رؤيتك إلى واقع ملموس بأسعار تنافسية وخدمة لا تُقارن.
       </p>
     </section>
-
     <!-- Services Section -->
     <section class="section" id="services">
       <h2>خدماتنا المتكاملة</h2>
