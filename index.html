@@ -17,6 +17,22 @@
 
   gtag('config', 'AW-18371212951');
 </script>
+  <!-- Event snippet for جهة اتصال (2) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18371212951/FZTFCK7LypQdEJftibhE',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
   <meta name="description" content="التميز للحفلات تقدم خدمات تأجير كراسي، طاولات، كنب فاخر، خيام، جلسات شعبية، تأجير عقود لمبات في الدمام، الخبر، جودة عالية، أسعار منافسة، تركيب سريع.">
   <meta name="keywords" content="تأجير كراسي, تأجير طاولات وكراسي, تأجير كنب, تأجير خيام, تأجير جلسات شعبية, قهوجيين عزاء, تأجير سماعات, حفلات الدمام, حفلات مناسبات, تأجير كراسي ملكي, خيام أوروبية">
   <link rel="canonical" href="https://altamaiz7.com" />
